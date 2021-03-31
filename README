@@ -1,0 +1,33 @@
+TP 4 - USER PROG
+
+
+Se agregó la bandera de DEBUG 'U' para mostrar lo referente a llamadas a sistema de nachos
+Se modificaron los archivos:
+- thread/thread.cc
+- thread/thread.h
+- thread/scheduler.cc
+- thread/scheduler.h
+- thread/system.h
+- thread/system.cc
+- userprog/exception.cc
+- userprog/addrspace.h
+
+
+
+Probablemente algún archivo qe no esté en la lista con algún mínimo detalle
+
+Se agregaron os ejemplos 
+files, exec , consola1 y consola2 en la carpeta test
+
+Se creó la clase SynchConsole en la carpeta userprog. Se crearon los archivos:
+- userprog/synchconsole.h
+- userprog/synchconsole.cc
+
+ALGUNAS CONVENCIONES
+- El status de salida de un proceso es un valor entre -128 y 127
+- El scheduler lleva una lista de los status de salida de los procesos que van terminando
+  si un proceso no terminó se encuentra en esta lista con un status de 128
+- Tomamos por convención que los descriptores de archivos de entrada y salida standar (0 y 1) no puden ser cerrados
+- El uso de la consola activa interrupciones, para que nachos termine se debe llamar a Halt explícitamente
+
+Alumnos: Ait, Ismael ; Pajón, Manuel ; Postan, Ezequiel
